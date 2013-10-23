@@ -83,8 +83,15 @@ h3 {
 	margin: 0px;
 }
 
-#face {
+.div_pic {
+	text-align: center;
+	padding: 0px;
+}
 
+#face {
+	height: 200px;
+	width: auto;
+	z-index: 1;
 }
 
 #end {
