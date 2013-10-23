@@ -1,0 +1,100 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	color: black;
+	font-size: 20px;
+	position: static;
+}
+
+i {
+	color: #56BFB4;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+i:hover {
+	opacity: 0.6;
+}
+
+div {
+	width: 100%;
+	margin: 0px;
+	border: 0px;
+	padding: 0px; 
+}
+
+#header {
+	position: fixed;
+	background-image: url('images/tweed.png');
+	height: 70px;
+	z-index: 1;
+}
+
+#header div {
+	display: inline;
+}
+
+#header span {
+	font: sans-serif;
+	float: right;
+	margin: 3px;
+	padding-top: 21px;
+	padding-right: 30px; 
+}
+
+#header span:hover {
+	color: #BF2B70;
+	cursor: pointer;
+}
+
+#footer {
+	background-image: url('images/black-Linen.png');
+	height: 100px;	
+}
+
+#footer div {
+	padding-left: 35%;
+	padding-top: 20px;
+}
+
+#content {
+	background-image: url('images/sandpaper.png');
+/*	height: 600px;*/
+}
+
+#content img{
+	width: 500px;
+	height: auto;
+	margin: 5%;
+}
+
+#content_pic {
+	border: solid #FFF 20px;
+}
+
+#content_pic:hover {
+	cursor: pointer;
+}
+
+h3 {
+	font: sans-serif;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+#face {
+
+}
+
+#end {
+	margin-right: 15px;
+}
+
+#logo {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 60px;
+	width: auto;
+}
