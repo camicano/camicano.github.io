@@ -3,7 +3,7 @@ body {
 	margin: 0px;
 	color: black;
 	font-size: 20px;
-	position: static;
+	font-family: 'Aller';
 }
 
 i {
@@ -16,17 +16,18 @@ i:hover {
 	opacity: 0.6;
 }
 
-div {
-	width: 100%;
-	margin: 0px;
-	border: 0px;
-	padding: 0px; 
+#logo {
+	height: 75px;
+	width: auto;
+	padding-left: 10px;
+	padding-top: 
 }
 
 #header {
-	position: fixed;
-	background-image: url('images/tweed.png');
-	height: 70px;
+/*	position: fixed;
+*/	background-image: url(../images/black-Linen.png);
+/*	height: 70px;*/
+	width: 100%;
 	z-index: 1;
 }
 
@@ -35,7 +36,6 @@ div {
 }
 
 #header span {
-	font: sans-serif;
 	float: right;
 	margin: 3px;
 	padding-top: 21px;
@@ -43,37 +43,48 @@ div {
 }
 
 #header span:hover {
-	color: #BF2B70;
+	color: #851E4E;
 	cursor: pointer;
 }
 
 #footer {
-	background-image: url('images/black-Linen.png');
+	background-image: url(../images/black-Linen.png);
 	height: 100px;	
 }
 
 #footer div {
-	padding-left: 35%;
+	padding-left: 37%;
 	padding-top: 20px;
 }
 
 #content {
-	background-image: url('images/sandpaper.png');
+/*	background-image: url(../images/sandpaper.png);*/
+	background-color: #DEDEDE;
 /*	height: 600px;*/
 }
 
 #content img{
-	width: 500px;
+	width: 400px;
 	height: auto;
 	margin: 5%;
 }
 
+#content div{
+	display: inline-block;
+}
+
 #content_pic {
 	border: solid #FFF 20px;
+	padding: 0px;
+	margin: 0px;
+	opacity: 0.8;
+	filter: grayscale(50%);
+
 }
 
 #content_pic:hover {
 	cursor: pointer;
+	opacity: 0.6;
 }
 
 h3 {
@@ -83,25 +94,54 @@ h3 {
 	margin: 0px;
 }
 
-.div_pic {
+.pic_div {
 	text-align: center;
 	padding: 0px;
+	width: 40%;
+	height: auto;
+	display: inline-block;
 }
 
-#face {
-	height: 200px;
-	width: auto;
-	z-index: 1;
+#projects{
+	text-align: center;
+	padding: 5%;
+}
+
+#projects span{
+	padding: 0px;
+	margin: 0px;
 }
 
 #end {
 	margin-right: 15px;
 }
 
-#logo {
-	position: relative;
-	margin-top: 10px;
-	margin-left: 10px;
-	height: 60px;
-	width: auto;
+#right_content {
+/*	width: 50%;*/
+	margin-top: 12%;
+	text-align: center;
+	/*float: right;*/
 }
+
+#left_content {
+	width: 50%;
+}
+
+#face {
+	width: 200px;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

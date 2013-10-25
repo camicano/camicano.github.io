@@ -1,53 +1,80 @@
 <!DOCTYPEhtml>
 <html>
 <head>
-	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" href="./stylesheets/style.css">
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js" language="javascript" type="text/javascript"></script>
-	<script src="http://underscorejs.org/underscore-min.js" language="javascript" type="text/javascript"></script>
-	<script src="http://tryhandlebarsjs.com/js/libs/handlebars.js" language="javascript" type="text/javascript"></script>
- 	<script src="http://backbonejs.org/backbone-min.js" language="javascript" type="text/javascript"></script>
-	<script type="text/javascript" src="./scripts/script.js"></script>
+	<title>Camila Cano Portfolio</title>
 
+<!-- CSS -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+
+<!-- General links -->
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/underscore.js"></script>
+  <script src="scripts/backbone.js"></script>
+  <script src="scripts/handlebars.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+
+<!-- Backbone links -->
+  <script src="scripts/backbone/views/AppView.js"></script>
+  <script src="scripts/backbone/routers/Router.js"></script>
+  <script src="scripts/backbone/collections/ProjectList.js"></script>
+  <script src="scripts/backbone/models/Project.js"></script>
+  <script src="scripts/backbone/views/ProjectListView.js"></script>
+  <script src="scripts/backbone/app.js"></script>
+ 
 
 </head>
 <body>
+<!-- Handlebars templates -->
+  <script id="project-view-template" type="text/x-handlebars-template">
+			<div class='pic_div'>	
+				<a href='{{link}}' target='blank' >
+					<p>{{title}}</p>
+					<img id='content_pic' src='{{image}}' />
+				</a>
+			</div>
+	</script>
+
+
+
+
 	<div id='header'>
-		<div>
-			<img src='stylesheets/images/logo.png' id='logo' />
-			<span id='end'>Contact</span>
-			<span>Resume</span>
-			<span>Projects</span>
+		<div class='row'>
+			<div id='right_content' class="large-10 columns large-offset-1">
+				<div>
+					<img src='images/logo.png' />
+				</div>
+				<h2>Tagline...</h2>
+				<p>Skills</p>
+				<p>stuff</p>
+				<p>stuff</p>
+				<p>stuff</p>
+				<p>Other Stuff</p>
+			</div>
 		</div>
+		<br>
+		<br>
+
+			<div>
+				<img src='images/logo.png' id='logo' />
+				<span id='end'>Contact</span>
+				<span>Resume</span>
+				<span>Projects</span>
+			</div>
 	</div>
 
 	<div id='content'>
 		<br>
 		<br>
 		<br>
-		<br>		
-		<div>
-			<h3>Fullstack Developer</h3>
-			<img id='face' src='stylesheets/images/face.jpg' >
-		</div>
+		<br>
+
+		<div id='resume'>
+		</div>		
 
 		<h3>Projects</h3>
-		<div class='pic_div'>
-			<span>Asana &copy; 2013</span>	
-			<img id='content_pic' src='stylesheets/images/asana.jpg' id='logo' />
-		</div>
-		<div class='pic_div'>
-			<span>Food me! &copy; 2013</span>
-			<img id='content_pic' src='stylesheets/images/foodme.jpg' id='logo' />
-		</div>
-		<div class='pic_div'>
-			<p>Tunr &copy; 2013</p>
-			<img id='content_pic' src='stylesheets/images/tunr.jpg' id='logo' />
-		</div>
-		<div class='pic_div'>
-			<p>Camicano &copy; 2012</p>
-			<img id='content_pic' src='stylesheets/images/camicano.jpg' id='logo' />
+		<div id='projects'>
 		</div>
 	</div>
 
@@ -57,7 +84,6 @@
 			<i class="icon-linkedin icon-3x"></i>
 			<i class="icon-twitter icon-3x"></i>
 			<i class="icon-stackexchange icon-3x"></i>
-			<i class="icon-laptop icon-3x"></i>
 		</div>
 	</div>
 </body>
