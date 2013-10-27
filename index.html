@@ -1,33 +1,46 @@
 <!DOCTYPEhtml>
 <html>
 <head>
-	<title>Camila Cano Portfolio</title>
+	<title>Camila Cano's Portfolio</title>
 
-<!-- CSS -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<!--##############################-->
+<!--##############CSS#############-->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+	<!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="stylesheets/foundation.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
 
-<!-- General links -->
+<!--##############################-->
+<!--########General links#########-->
   <script src="scripts/jquery.js"></script>
   <script src="scripts/underscore.js"></script>
   <script src="scripts/backbone.js"></script>
   <script src="scripts/handlebars.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 
-<!-- Backbone links -->
+<!--##############################-->
+<!--########Backbone links########-->
   <script src="scripts/backbone/views/AppView.js"></script>
   <script src="scripts/backbone/routers/Router.js"></script>
   <script src="scripts/backbone/collections/ProjectList.js"></script>
+  <script src="scripts/backbone/collections/TopMenuList.js"></script>
+  <script src="scripts/backbone/collections/BottomMenuList.js"></script>  
   <script src="scripts/backbone/models/Project.js"></script>
+  <script src="scripts/backbone/models/TopMenu.js"></script>
+  <script src="scripts/backbone/models/BottomMenu.js"></script>
   <script src="scripts/backbone/views/ProjectListView.js"></script>
+  <script src="scripts/backbone/views/TopMenuListView.js"></script>
+  <script src="scripts/backbone/views/BottomMenuListView.js"></script>
   <script src="scripts/backbone/app.js"></script>
  
 
 </head>
 <body>
-<!-- Handlebars templates -->
-  <script id="project-view-template" type="text/x-handlebars-template">
+<!--##############################-->
+<!--######Handlebars templates####-->
+  	
+	<!-- Projects Template -->
+  	<script id="project-view-template" type="text/x-handlebars-template">
 			<div class='pic_div'>	
 				<a href='{{link}}' target='blank' >
 					<p>{{title}}</p>
@@ -36,31 +49,36 @@
 			</div>
 	</script>
 
+	<!-- Top Menu Template -->
+  	<script id="top-menu-view-template" type="text/x-handlebars-template">
+		<span>{{title}}</span>
+	</script>
 
+	<!-- Bottom Menu Template -->
+  	<script id="bottom-menu-view-template" type="text/x-handlebars-template">
+  		<a href='{{{link}}}' target='blank'>
+  			<i class="{{{name}}}"></i>
+  		</a>
+	</script>
 
-
+<!--##############################-->
+<!--#########Website body#########-->
 	<div id='header'>
 		<div class='row'>
+			<!-- First section: this is where the logo, tag line, one sentence description goes -->
 			<div id='right_content' class="large-10 columns large-offset-1">
 				<div>
 					<img src='images/logo.png' />
 				</div>
 				<h2>Tagline...</h2>
 				<p>Skills</p>
-				<p>stuff</p>
-				<p>stuff</p>
-				<p>stuff</p>
 				<p>Other Stuff</p>
 			</div>
 		</div>
 		<br>
 		<br>
-
-			<div>
-				<img src='images/logo.png' id='logo' />
-				<span id='end'>Contact</span>
-				<span>Resume</span>
-				<span>Projects</span>
+		<!-- Top menu -->
+			<div id='top-menu'>
 			</div>
 	</div>
 
@@ -69,22 +87,46 @@
 		<br>
 		<br>
 		<br>
+		
+		<!-- Bio div where I talk a little bit more about myself -->
+		<h3>About</h3>
+		<div id='about'>
+		</div>
 
-		<div id='resume'>
-		</div>		
-
+		<!-- Projects div where all the project photos get appended -->
 		<h3>Projects</h3>
 		<div id='projects'>
 		</div>
+
+		<!-- Music div where all the music will get appended -->
+		<h3>Music</h3>
+		<div id='music '>
+		</div>
+
+		<!-- Contact div where the contact info is displayed -->
+		<h3>Contact</h3>
+		<div id='contact'>
+		</div>
 	</div>
 
+	<!-- Bottom menu -->
 	<div id='footer'>
-		<div>
-			<i class="icon-github-sign icon-3x"></i>
-			<i class="icon-linkedin icon-3x"></i>
-			<i class="icon-twitter icon-3x"></i>
-			<i class="icon-stackexchange icon-3x"></i>
+		<div id='bottom-menu'>
 		</div>
 	</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
