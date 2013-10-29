@@ -2,7 +2,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	color: black;
-	font-size: 20px;
+	font-size: 1em;
 	font-family: 'Aller';
 }
 
@@ -20,19 +20,25 @@ a {
 	text-decoration: none;
 }
 
-#logo {
-	height: 75px;
-	width: auto;
-	padding-left: 10px;
-	padding-top: 
+h1 {
+	font-family: "Marmellata (Jam)_demo";
+	color: #BF2B70;
+	font-size: 6em;
+	margin: 0px;
 }
 
 #header {
-/*	position: fixed;
-*/	background-image: url(../images/black-Linen.png);
-/*	height: 70px;*/
+	position: fixed;
+	background-image: url(../images/black-Linen.png);
+	height: 70px;
 	width: 100%;
 	z-index: 1;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
 }
 
 #header div {
@@ -42,35 +48,41 @@ a {
 #header span {
 	float: right;
 	margin: 3px;
-	padding-top: 21px;
-	padding-right: 30px; 
+	padding-top: 24px;
+	padding-right: 20px; 
+	color: #BCBFC4;
 }
 
 #header span:hover {
-	color: #851E4E;
+	color: #BF2B70;
 	cursor: pointer;
 }
 
 #footer {
 	background-image: url(../images/black-Linen.png);
-	height: 100px;	
+	width: 100%;
+	color: #BCBFC4;
+	padding: 30px;
+}
+
+#footer div{
+	text-align: center;
 }
 
 #bottom-menu {
-	padding-left: 37%;
 	padding-top: 20px;
 }
 
 #content {
-/*	background-image: url(../images/sandpaper.png);*/
 	background-color: #DEDEDE;
-/*	height: 600px;*/
 }
 
-#content img{
-	width: 400px;
-	height: auto;
-	margin: 5%;
+#logo{
+	width: 300px;
+}
+
+#otters {
+	width: 250px;
 }
 
 #content div{
@@ -116,26 +128,10 @@ h3 {
 	margin: 0px;
 }
 
-#end {
-	margin-right: 15px;
-}
-
 #right_content {
-/*	width: 50%;*/
 	margin-top: 12%;
 	text-align: center;
-	/*float: right;*/
 }
-
-#left_content {
-	width: 50%;
-}
-
-#face {
-	width: 200px;
-	height: auto;
-}
-
 
 
 
