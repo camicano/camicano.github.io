@@ -15,7 +15,7 @@ app.Router = Backbone.Router.extend({
     ]);
 
     this.topmenu = new app.TopMenuList([
-      new app.TopMenu({title: 'Contact', height_location: '0px'}),
+      new app.TopMenu({title: 'Contact', height_location: '1000px'}),
       new app.TopMenu({title: 'Skills', height_location: '0px'}),
       new app.TopMenu({title: 'Projects', height_location: '0px'}),
       new app.TopMenu({title: 'Home', height_location: '0px'})

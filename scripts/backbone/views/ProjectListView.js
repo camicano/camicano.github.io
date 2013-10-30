@@ -9,7 +9,6 @@ app.ProjectListView = Backbone.View.extend({
 
   render: function() {
     this.collection.each(function(project) {
-      console.log(project);
       var template = Handlebars.compile($('#project-view-template').html());
       var html = template(project.toJSON());
       this.$list.append(html);

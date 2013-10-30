@@ -9,7 +9,6 @@ app.BottomMenuListView = Backbone.View.extend({
 
   render: function() {
     this.collection.each(function(bottommenu) {
-      console.log(bottommenu);
       var template = Handlebars.compile($('#bottom-menu-view-template').html());
       var html = template(bottommenu.toJSON());
       this.$list.append(html);

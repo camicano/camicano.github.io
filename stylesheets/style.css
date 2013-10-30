@@ -90,17 +90,14 @@ h2 {
 }
 
 #content_pic {
-	border: solid #FFF 20px;
+	border: solid #787878 2px;
 	padding: 0px;
 	margin: 0px;
-	opacity: 0.8;
-	filter: grayscale(50%);
-
 }
 
 #content_pic:hover {
 	cursor: pointer;
-	opacity: 0.6;
+	border: solid #BF2B70 2px;
 }
 
 h3 {
@@ -110,10 +107,15 @@ h3 {
 	margin: 0px;
 }
 
+#icon {
+	width:30px;
+	height: auto;
+}
+
 .pic_div {
 	text-align: center;
 	padding: 0px;
-	width: 40%;
+	width: 70%;
 	height: auto;
 	display: inline-block;
 }
@@ -131,6 +133,12 @@ h3 {
 #right_content {
 	margin-top: 12%;
 	text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+	.pic_div {
+		width: 100%;
+	}
 }
 
 

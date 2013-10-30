@@ -9,7 +9,6 @@ app.TopMenuListView = Backbone.View.extend({
 
   render: function() {
     this.collection.each(function(topmenu) {
-      console.log(topmenu);
       var template = Handlebars.compile($('#top-menu-view-template').html());
       var html = template(topmenu.toJSON());
       this.$list.append(html);
