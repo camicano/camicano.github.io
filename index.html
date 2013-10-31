@@ -46,10 +46,17 @@
   	<script id="project-view-template" type="text/x-handlebars-template">
 			<div class='pic_div'>	
 				<a href='{{link}}' target='blank' >
-					<p>{{title}}</p>
-					<img id='content_pic' src='{{image}}' />
+					<img id='content_pic' src='{{image}}' />	
 				</a>
-			</div>
+				<div class='project_content'>
+					<h2>{{title}}</h2>
+					<p>Description: {{description}}</p>
+					<p>Check out the code!</p>
+					<a href='{{github}}' target='blank'>
+						<i id='github_icon' class='fa fa-github fa-3x'></i>
+					</a>	
+				</div>
+			</div>		
 	</script>
 
 	<!-- Top Menu Template -->
@@ -106,12 +113,17 @@
 				<br>
 
 				<!-- Projects div where all the project photos get appended -->
-				<h3>...changing the world one app at a time:</h3>
-				<div id='projects'>
+				<div id='projects0'>
+					<h3>changing the world one app at a time</h3>
+					<div id='projects'>
+					</div>
 				</div>
-
+				<br>
+				<br>
+				<br>
+				<br>
 				<!-- Music div where all the music will get appended -->
-				<h3>Development tools I work with:</h3>
+				<h3 id='skills0'>Development tools I work with:</h3>
 				<div id='skills'>
 					<img src='images/ruby.png' id='icon' />
 					<img src="images/rails.png" id='icon' />
@@ -121,6 +133,10 @@
 					<i class="fa fa-html5"></i>
 					<i class="fa fa-css3"></i>
 				</div>
+				<br>
+				<br>
+				<br>
+				<br>
 			</div>		
 		</div>
 	</div>
@@ -130,7 +146,7 @@
 		
 		<!-- Contact div where the contact info is displayed -->
 		<div>
-		<h3>I'm always looking to connect with future collaborators, clients, or fellow developers, drop me a line!!</h3>
+		<h2>I'm always looking to connect with future collaborators, clients, or fellow developers, drop me a line!!</h2>
 		<br>
 		<h4>my email is camilacanog (at) gmail (dot) com or contact me via social media</h4>
 		</div>

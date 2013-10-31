@@ -13,7 +13,42 @@
 
 + ...changing the world one app at a time:
 
-((projects section))
+##projects
+
+####Foodme
+A plataform that allows you to see where are food truck located near your area.
+
+Technical Specifications:
++ rails
++ ruby
++ javascript
++ jQuery
++ Ajax
++ postgresql
++ Googlemaps API
++ Foursquare API
++ skeleton
+
+github: https://github.com/camicano/food_trucks_app
+
+####Asana
+An app that allows you to find affortable yoga classes near your location and at a time that works for you.
+
+Technical Specifications:
++ rails
++ ruby
++ postgresql
++ skeleton
+
+####Tunr
+A plataform that allows you to create a database of artist, albums and songs.
+
+Technical Specifications:
++ rails
++ ruby
++ postgresql
++ skeleton
+
 
 + I believe in working hard and stepping out of my comfort zone.
 
@@ -22,7 +57,6 @@
 	+ javascript
 	+ jQuery
 	+ rails
-	+ github
 	+ html5
 	+ css3
 	

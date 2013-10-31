@@ -38,7 +38,7 @@ h1 {
 h2 {
 	margin: 0px;
 	padding: 0px;
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
 #header div {
@@ -90,14 +90,14 @@ h2 {
 }
 
 #content_pic {
-	border: solid #787878 2px;
 	padding: 0px;
 	margin: 0px;
 }
 
-#content_pic:hover {
+.pic_div a:hover {
 	cursor: pointer;
-	border: solid #BF2B70 2px;
+	color: #BF2B70;
+	opacity: 0.9;
 }
 
 h3 {
@@ -105,6 +105,8 @@ h3 {
 	text-align: center;
 	padding: 0px;
 	margin: 0px;
+	font-size: 2em;
+	color: #56BFB4;
 }
 
 #icon {
@@ -118,11 +120,12 @@ h3 {
 	width: 70%;
 	height: auto;
 	display: inline-block;
+	padding: 12px;
 }
 
-#projects{
+#projects {
 	text-align: center;
-	padding: 5%;
+	padding: ;
 }
 
 #projects span{
@@ -131,8 +134,29 @@ h3 {
 }
 
 #right_content {
-	margin-top: 12%;
+	margin-top: 80px;
 	text-align: center;
+}
+
+.project_content {
+	padding: 19px;
+	background-image: url(../images/black-Linen.png);
+	color: #BCBFC4;
+	line-height: 1.5;
+	text-align: center;
+}
+
+#code_link {
+	color: #BCBFC4;
+}
+
+#code_link:hover {
+	color: #56BFB4;
+	cursor: pointer;
+}
+
+#github_icon{
+	padding: 0px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -140,10 +164,6 @@ h3 {
 		width: 100%;
 	}
 }
-
-
-
-
 
 
 
