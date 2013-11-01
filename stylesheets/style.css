@@ -1,4 +1,7 @@
+/*###############*/
+/*####GLOBAL#####*/
 body {
+	background-color: #DEDEDE;
 	padding: 0px;
 	margin: 0px;
 	color: black;
@@ -6,8 +9,39 @@ body {
 	font-family: 'Aller';
 }
 
-#footer span {
+table {
+	padding-left: 10%;
+	text-align: left;
+}
+
+table td {
+	width: 200px;
+}
+
+table i {
+	padding-left: 0px;
+}
+
+h1 {
+	font-family: "Marmellata (Jam)_demo";
 	color: #BF2B70;
+	font-size: 6em;
+	margin: 0px;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1.2em;
+}
+
+h3 {
+	font: sans-serif;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	font-size: 2.5em;
+	color: #459990;
 }
 
 i {
@@ -24,13 +58,13 @@ a {
 	text-decoration: none;
 }
 
-h1 {
-	font-family: "Marmellata (Jam)_demo";
-	color: #BF2B70;
-	font-size: 6em;
-	margin: 0px;
+hr {
+	margin: 20px 0 40px 0;
 }
 
+
+/*#################*/
+/*#### Header #####*/
 #header {
 	position: fixed;
 	background-image: url(../images/black-Linen.png);
@@ -39,11 +73,6 @@ h1 {
 	z-index: 1;
 }
 
-h2 {
-	margin: 0px;
-	padding: 0px;
-	font-size: 1.2em;
-}
 
 #header div {
 	display: inline;
@@ -62,39 +91,17 @@ h2 {
 	cursor: pointer;
 }
 
-#footer {
-	background-image: url(../images/black-Linen.png);
-	width: 100%;
-	color: #BCBFC4;
-	padding: 30px;
-	padding-left: 23%;
-}
 
-#footer div{
-	text-align: center;
-	width: 400px;
-	line-height: 1.5;
-}
-
-#bottom-menu {
-	padding-top: 20px;
-}
-
+/*#################*/
+/*#### Main Content #####*/
 #content {
-	background-color: #DEDEDE;
 	padding-left: 2.5%;
-}
-
-#logo{
-	width: 300px;
-}
-
-#otters {
-	width: 250px;
 }
 
 #content div{
 	display: inline-block;
+	padding-top: 30px; 
+	padding-bottom: 20px;
 }
 
 #content_pic {
@@ -102,56 +109,43 @@ h2 {
 	margin: 0px;
 }
 
-.pic_div a:hover {
-	cursor: pointer;
-	color: #BF2B70;
-	opacity: 0.9;
+#logo{
+	width: 400px;
+	padding: 10px;
 }
 
-h3 {
-	font: sans-serif;
-	text-align: center;
-	padding: 0px;
-	margin: 0px;
-	font-size: 2em;
-	color: #56BFB4;
-}
-
-#icon {
-	width:30px;
-	height: auto;
+#otters {
+	width: 250px;
 }
 
 .pic_div {
-	text-align: center;
 	padding: 0px;
 	width: 70%;
 	height: auto;
-	display: inline-block;
-	padding: 12px;
 }
 
-#projects {
-	text-align: center;
-	padding: ;
-}
-
-#projects span{
-	padding: 0px;
-	margin: 0px;
+.pic_div a:hover {
+	cursor: pointer;
+	color: #BF2B70;
+	opacity: 0.8;
 }
 
 #right_content {
-	margin-top: 80px;
+	margin-top: 30px;
 	text-align: center;
 }
 
 .project_content {
-	padding: 19px;
 	background-image: url(../images/black-Linen.png);
 	color: #BCBFC4;
 	line-height: 1.5;
 	text-align: center;
+	padding: 20px;
+	margin: 0;
+}
+
+.project_content p {
+	line-height: 1.5;
 }
 
 #code_link {
@@ -163,8 +157,36 @@ h3 {
 	cursor: pointer;
 }
 
+#icon {
+	width:30px;
+	height: auto;
+}
+
 #github_icon{
 	padding: 0px;
+}
+
+
+/*#######################*/
+/*#### Media Queries ####*/
+#footer {
+	background-image: url(../images/black-Linen.png);
+	width: 100%;
+	color: #BCBFC4;
+	padding: 40px 0 40px 0;
+	padding-left: 23%;
+	float: right;
+}
+
+#footer span {
+	color: #BF2B70;
+}
+
+
+#bottom, #bottom-menu{
+	text-align: center;
+	width: 400px;
+	line-height: 1.5;
 }
 
 #bottom-menu {
@@ -176,34 +198,11 @@ h3 {
 }
 
 
-table {
-	padding-left: 10%;
-	text-align: left;
-}
-
-table td {
-	width: 200px;
-}
-
-table i {
-	padding-left: 0px;
-}
-
+/*#######################*/
+/*#### Media Queries ####*/
 @media only screen and (max-width: 500px) {
-	.pic_div {
-		width: 100%;
-	}
-
 	table {
 		padding-left: 5%;
-	}
-
-	#content{
-		padding-left: 0;
-	}
-
-	#footer {
-		padding: 20px 0px 20px 0px;
 	}
 
 	#header span {
@@ -213,6 +212,18 @@ table i {
 	#header {
 		padding-top: 26px;
 		text-align: center;
+	}
+
+	#content{
+		padding-left: 0;
+	}
+
+	.pic_div {
+		width: 100%;
+	}
+
+	#footer {
+		padding: 20px 0px 80px 0px;
 	}
 }
 

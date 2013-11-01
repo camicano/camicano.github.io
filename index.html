@@ -49,15 +49,15 @@
 					<img id='content_pic' src='{{image}}' />	
 				</a>
 				<div class='project_content'>
-					<h2>{{title}}</h2>
+					<h3>{{title}}</h3>
 					<p>Description: {{description}}</p>
-					<ul>{{#each techspecs}}
-						<li>{{this}}</li>
+					<br>
+					<h2>Technical specifications</h2>
+					{{#each techspecs}}
+						<p>{{this}}</p>
 					{{/each}}
-					</ul>
-
-
-					<p>Check out the code!</p>
+					<br>
+					<h2>Check out the code!</h2>
 					<a href='{{github}}' target='blank'>
 						<i id='github_icon' class='fa fa-github fa-3x'></i>
 					</a>	
@@ -102,24 +102,12 @@
 				<p>Native of Bogota, Colombia and New Yorker at heart.</p>
 
 				<p>I am passionate about web development because it is a tool to redifine how we do everything.</p>
-				<p>...</p>
 				<br>
-				<br>
-
-				<p>whenever I'm sad I remember that otters hold hands while they sleep</p>
-
-				<img src='images/otters.png' id='otters'/>
-
-				<!-- Bio div where I talk a little bit more about myself -->
-				<br>
-				<br>
-				<p>...</p>
-				<br>
-				<br>
+				<hr>
 
 				<!-- Projects div where all the project photos get appended -->
 				<div id='projects0'>
-					<h3>changing the world one app at a time</h3>
+					<h3>changing the world one app at a time...</h3>
 					<div id='projects'>
 					</div>
 				</div>
@@ -173,41 +161,44 @@
 									<p><i class="fa fa-check"></i> HTML </p>
 								</td>
 								<td><p><i class="fa fa-check"></i> Sinatra</p></td>
-								<td><p><i class="fa fa-check"></i> Foundation</p></td>
+								<td><p><i class="fa fa-check"></i> Pivotal Tracker</p></td>
 							</tr>
 							<tr>
 								<td><p><i class="fa fa-check"></i> CSS </p></td>
 								<td><p><i class="fa fa-check"></i> Skeleton</p></td>
-								<td></td>
+								<td><p><i class="fa fa-check"></i> D3 Library</p></td>
 							</tr>
 							<tr>
 								<td><p><i class="fa fa-check"></i> SQL </p></td>
-								<td></td>
+								<td><p><i class="fa fa-check"></i> Foundation</p></td>
 								<td></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<hr>
+				<!-- otters! -->
+				<div>
+					<p>whenever I'm sad I remember that otters hold hands while they sleep</p>
+
+					<img src='images/otters.png' id='otters'/>
+				</div>
 			</div>		
 		</div>
 	</div>
 
 	<!-- Bottom menu -->
-	<div id='footer' class="large-12 columns large-offset-3" >
-		
-		<!-- Contact div where the contact info is displayed -->
-		<div id='bottom'>
-			<h2>I'm always looking to connect with future collaborators, clients, or fellow developers, drop me a line!!</h2>
-			<h4>my email is <span>camilacanog (at) gmail (dot) com</span> or contact me via social media</h4>
-		</div>
-		<div id='bottom-menu'>
-		</div>
+	<div id='footer'>
+		<div class="large-12 columns large-offset-3" >
+			<!-- Contact div where the contact info is displayed -->
+			<div id='bottom'>
+				<h2>I'm always looking to connect with future collaborators, clients, or fellow developers, drop me a line!!</h2>
+				<h4>my email is <span>camilacanog (at) gmail (dot) com</span></h4>
+			</div>
+			<div id='bottom-menu'>
+				<h4>or contact me via social media:</h4>
+			</div>
+		</div>			
 	</div>
 </body>
 </html>
