@@ -51,6 +51,12 @@
 				<div class='project_content'>
 					<h2>{{title}}</h2>
 					<p>Description: {{description}}</p>
+					<ul>{{#each techspecs}}
+						<li>{{this}}</li>
+					{{/each}}
+					</ul>
+
+
 					<p>Check out the code!</p>
 					<a href='{{github}}' target='blank'>
 						<i id='github_icon' class='fa fa-github fa-3x'></i>
@@ -85,7 +91,7 @@
 		<div class='row'>
 
 			<!-- First section: this is where the logo, tag line, one sentence description goes -->
-			<div id='right_content' class="large-12 columns large-offset-3">
+			<div id='right_content' class="large-12 columns large-offset-2">
 
 				<h1>Camila Cano</h1>
 				<h2>Web Developer - Sound Designer - Music Composer</h2>
@@ -104,7 +110,6 @@
 
 				<img src='images/otters.png' id='otters'/>
 
-				
 				<!-- Bio div where I talk a little bit more about myself -->
 				<br>
 				<br>
@@ -120,19 +125,71 @@
 				</div>
 				<br>
 				<br>
+				<hr>
 				<br>
 				<br>
 				<!-- Music div where all the music will get appended -->
 				<h3 id='skills0'>Development tools I work with:</h3>
+				<br>
+				<br>
 				<div id='skills'>
-					<img src='images/ruby.png' id='icon' />
-					<img src="images/rails.png" id='icon' />
-					<p>JavaScript</p>
-					<p>jQuery</p>
-					<p>Rails</p>
-					<i class="fa fa-html5"></i>
-					<i class="fa fa-css3"></i>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<h4>Languages</h4>
+								</td>
+								<td>
+									<h4>Frameworks</h4>
+								</td>
+								<td>
+									<h4>Other</h4>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p><i class="fa fa-check"></i> Ruby</p>
+								</td>
+								<td>
+									<p><i class="fa fa-check"></i> Rails</p>
+								</td>
+								<td>
+									<p><i class="fa fa-check"></i> Rspec</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p><i class="fa fa-check"></i> JavaScript </p>
+								</td>
+								<td>
+									<p><i class="fa fa-check"></i> Backbone</p>
+								</td>
+								<td>
+									<p><i class="fa fa-check"></i> Version control(Git)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p><i class="fa fa-check"></i> HTML </p>
+								</td>
+								<td><p><i class="fa fa-check"></i> Sinatra</p></td>
+								<td><p><i class="fa fa-check"></i> Foundation</p></td>
+							</tr>
+							<tr>
+								<td><p><i class="fa fa-check"></i> CSS </p></td>
+								<td><p><i class="fa fa-check"></i> Skeleton</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><p><i class="fa fa-check"></i> SQL </p></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
+				<br>
+				<br>
 				<br>
 				<br>
 				<br>
@@ -142,13 +199,12 @@
 	</div>
 
 	<!-- Bottom menu -->
-	<div id='footer'>
+	<div id='footer' class="large-12 columns large-offset-3" >
 		
 		<!-- Contact div where the contact info is displayed -->
-		<div>
-		<h2>I'm always looking to connect with future collaborators, clients, or fellow developers, drop me a line!!</h2>
-		<br>
-		<h4>my email is camilacanog (at) gmail (dot) com or contact me via social media</h4>
+		<div id='bottom'>
+			<h2>I'm always looking to connect with future collaborators, clients, or fellow developers, drop me a line!!</h2>
+			<h4>my email is <span>camilacanog (at) gmail (dot) com</span> or contact me via social media</h4>
 		</div>
 		<div id='bottom-menu'>
 		</div>
