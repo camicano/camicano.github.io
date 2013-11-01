@@ -116,6 +116,8 @@ hr {
 
 #otters {
 	width: 250px;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 .pic_div {
@@ -173,7 +175,7 @@ hr {
 	background-image: url(../images/black-Linen.png);
 	width: 100%;
 	color: #BCBFC4;
-	padding: 40px 0 40px 0;
+	padding: 40px 0 80px 0;
 	padding-left: 23%;
 	float: right;
 }
@@ -223,7 +225,7 @@ hr {
 	}
 
 	#footer {
-		padding: 20px 0px 80px 0px;
+		padding: 20px 0px 50px 0px;
 	}
 }
 

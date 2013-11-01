@@ -17,7 +17,7 @@ $(function(){
 	});
 
 	$("#Contact").on('click', function(){
-		offset($('#footer').offset());
+		offset($('#footer0').offset());
 	});
 });
 
