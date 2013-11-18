@@ -8,9 +8,10 @@ app.Router = Backbone.Router.extend({
 
   initialize: function() {
     this.projects = new app.ProjectList([
+      new app.Project({title: 'White Paradise', link: 'http://54.201.33.116:3000', image: 'images/white.png', description: 'A story about the relationship between the production of cocaine and the war in Colombia', techspecs: [ 'Rails 4', 'Ruby', 'Mongo DB', 'JavaScript', 'D3' ], github: 'https://github.com/camicano/infographic' }),
+      new app.Project({title: 'Most Forked Repos on Github', link: 'http://184.73.186.178:3000/', image: 'images/github.png', description: 'An infographic that show you the most popular repos of the day on Github.', techspecs: [ 'Rails 4', 'Ruby', 'Mongo DB', 'JavaScript', 'D3' ], github: 'https://github.com/camicano/github_app' }),
       new app.Project({title: 'Food Me', link: 'http://foodme.us/', image: 'images/foodme.png', description: 'A plataform that allows you to see where are food truck located near your area.', techspecs: [ 'Rails', 'Ruby', 'Javascript', 'jQuery', 'Postgresql', 'Googlemaps API', 'Frousquare API', 'Skeleton' ], github: 'https://github.com/camicano/food_trucks_app' }),
-      new app.Project({title: 'Asana', link: 'http://yogapp.herokuapp.com/', image: 'images/asana.png', description: 'An app that allows you to find affortable yoga classes near your location and at a time that works for you.', techspecs: [ 'Rails', 'Ruby', 'Postgresql', 'Skeleton' ], github: 'https://github.com/camicano/yoga_app' }),
-      new app.Project({title: 'Tunr', link: 'http://tunr-app.herokuapp.com', image: 'images/tunr.png', description: 'A plataform that allows you to create a database of artist, albums and songs.', techspecs: [ 'Rails', 'Ruby', 'Postgresql', 'Skeleton' ], github: 'https://github.com/camicano/turnapp' })
+      new app.Project({title: 'Asana', link: 'http://yogapp.herokuapp.com/', image: 'images/asana.png', description: 'An app that allows you to find affortable yoga classes near your location and at a time that works for you.', techspecs: [ 'Rails', 'Ruby', 'Postgresql', 'Skeleton' ], github: 'https://github.com/camicano/yoga_app' })
     ]);
 
     this.topmenu = new app.TopMenuList([
