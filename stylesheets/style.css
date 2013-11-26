@@ -187,7 +187,7 @@ hr {
 
 #bottom, #bottom-menu{
 	text-align: center;
-	width: 400px;
+	width: 35%;
 	line-height: 1.5;
 }
 
@@ -205,6 +205,11 @@ hr {
 @media only screen and (max-width: 500px) {
 	table {
 		padding-left: 5%;
+	}
+
+	#footer {
+		width: 100%;
+		height: auto;
 	}
 
 	#header span {
