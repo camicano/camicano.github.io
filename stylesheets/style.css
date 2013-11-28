@@ -1,12 +1,22 @@
 /*###############*/
 /*####GLOBAL#####*/
+@font-face {
+    font-family: "Al";
+    src: url('./fonts/Aller_Rg.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Mar";
+    src: url('./fonts/Marmellata(Jam)_demo.ttf') format("truetype");
+}
+
 body {
 	background-color: #DEDEDE;
 	padding: 0px;
 	margin: 0px;
 	color: black;
 	font-size: 1em;
-	font-family: 'Aller';
+	font-family: 'Al';
 }
 
 table {
@@ -23,7 +33,7 @@ table i {
 }
 
 h1 {
-	font-family: "Marmellata (Jam)_demo";
+	font-family: "Mar";
 	color: #BF2B70;
 	font-size: 6em;
 	margin: 0px;
@@ -187,7 +197,7 @@ hr {
 
 #bottom, #bottom-menu{
 	text-align: center;
-	width: 35%;
+	width: 400px;
 	line-height: 1.5;
 }
 
@@ -199,17 +209,16 @@ hr {
 	float: left;	
 }
 
+#clear {
+	clear: both;
+}
+
 
 /*#######################*/
 /*#### Media Queries ####*/
 @media only screen and (max-width: 500px) {
 	table {
 		padding-left: 5%;
-	}
-
-	#footer {
-		width: 100%;
-		height: auto;
 	}
 
 	#header span {
